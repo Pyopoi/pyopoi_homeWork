@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+.hidden{
+    display: none;
+    /* visibility: hidden; 이거는 공간은 냅두고 가리지만
+        display:none;은 공간 자체를 없애버린다.*/ 
+}
+*{
+    padding:0;margin:0;
+    font-family: 'Noto Serif KR', serif;
+}
+img {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:80%;
+    }
+
+    li{
+        list-style:none;
+    }
+#warp{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /**/
+    .clock_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 300px;
+        h2{
+            font-size: 80px;
+            color:rgb(216, 196, 85);
+        }
+    }
+    /**/
+    /**/
+    #login-form{
+        width: 500px;
+        height: 100px;
+        margin: 0 auto;
+        input{
+            margin: 0 auto;
+            width: 400px;
+            height: 60px;
+            border: none;
+            border-radius: 10px;
+            border-bottom: 2px dotted #fff;
+            background-color: rgba(0,0,0,0); 
+            
+            font-size: 24px;
+            text-align: center;
+            color: #fff;
+        }::placeholder{
+            color:rgba(0,0,0,0.7);
+            font-size: 24px;
+            text-align: center;
+        }
+        button{
+            width: 80px;
+            height: 60px;
+            border-radius: 30px;
+            border: 2px solid #fff;
+            box-sizing: border-box;
+            background-color: rgba(0,0,0,0);
+            font-size: 16px;
+            font-weight: 700;
+            color:#fff;
+            cursor: pointer;
+        }:hover{
+            transition-duration: 0.4s;
+            background-color: #fff;
+            color:rgba(0,0,0,1);
+        }
+    }
+    /**/
+    .greeting_box{
+        display: flex;
+        flex-direction: center;
+        justify-content: center;
+        h1{
+            font-size: 40px;
+            color:#fff;
+        }
+    }
+    /**/
+    #todo-form{
+        width: 500px;
+        height: 80px;
+        margin:0 auto;
+        input{
+            width: 500px;
+            height: 40px;
+            background-color: rgba(0,0,0,0); 
+            border: none;
+            border-radius: 20px;
+            font-size: 24px;
+            text-align: center;
+            color: #fff;
+        }::placeholder{
+            color:rgba(0,0,0,0.7);
+            font-size: 24px;
+            text-align: center;
+        }:hover{
+            transition-duration: 0.4s;
+            background-color: #fff;
+            color:rgba(0,0,0,1);
+        }
+    }
+    /**/
+    #todo-list{
+        text-align: center;
+        li{
+            span{
+                font-size: 20px;
+                border: none;
+            }
+            button{
+                border: none;
+                background-color: rgba(0,0,0,0);
+                padding-left: 10px;
+                color:rgba(0,0,0,0.7);
+                font-style: italic;
+            }
+        }
+    }
+    /**/
+    /**/
+}

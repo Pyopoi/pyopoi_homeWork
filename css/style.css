@@ -40,6 +40,7 @@ li {
   /**/
   /**/
   /**/
+  /**/
 }
 
 #warp .clock_box {
@@ -57,8 +58,8 @@ li {
 }
 
 #warp .clock_box h2 {
-  font-size: 80px;
-  color: #d8c455;
+  font-size: 88px;
+  color: #36321a;
 }
 
 #warp #login-form {
@@ -139,14 +140,15 @@ li {
 }
 
 #warp .greeting_box h1 {
-  font-size: 40px;
-  color: #fff;
+  font-size: 44px;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 #warp #todo-form {
   width: 500px;
   height: 80px;
-  margin: 0 auto;
+  margin: 50px auto;
+  margin-bottom: 00px;
 }
 
 #warp #todo-form input {
@@ -192,12 +194,19 @@ li {
 }
 
 #warp #todo-list {
+  width: 500px;
+  margin: 0 auto;
   text-align: center;
 }
 
+#warp #todo-list li {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 #warp #todo-list li span {
-  font-size: 20px;
+  font-size: 24px;
   border: none;
+  font-style: italic;
 }
 
 #warp #todo-list li button {
@@ -205,6 +214,40 @@ li {
   background-color: rgba(0, 0, 0, 0);
   padding-left: 10px;
   color: rgba(0, 0, 0, 0.7);
-  font-style: italic;
+  cursor: pointer;
+}
+
+#warp #quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#warp #quote span {
+  font-size: 28px;
+  color: #f0f0f0;
+  font-weight: 600;
+}
+
+#warp #weather {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  z-index: 2;
+}
+
+#warp #weather span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

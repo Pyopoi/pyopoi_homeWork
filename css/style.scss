@@ -35,8 +35,8 @@ img {
         justify-content: center;
         margin-top: 300px;
         h2{
-            font-size: 80px;
-            color:rgb(216, 196, 85);
+            font-size: 88px;
+            color:rgb(54, 50, 26);
         }
     }
     /**/
@@ -85,15 +85,16 @@ img {
         flex-direction: center;
         justify-content: center;
         h1{
-            font-size: 40px;
-            color:#fff;
+            font-size: 44px;
+            color:rgba(0,0,0,0.7);
         }
     }
     /**/
     #todo-form{
         width: 500px;
         height: 80px;
-        margin:0 auto;
+        margin:50px auto;
+        margin-bottom:00px;
         input{
             width: 500px;
             height: 40px;
@@ -115,21 +116,48 @@ img {
     }
     /**/
     #todo-list{
+        width: 500px;
+        margin:0 auto;
         text-align: center;
         li{
+            background-color: rgba(255,255,255,0.3);
             span{
-                font-size: 20px;
+                font-size: 24px;
                 border: none;
+                font-style: italic;
             }
             button{
                 border: none;
                 background-color: rgba(0,0,0,0);
                 padding-left: 10px;
                 color:rgba(0,0,0,0.7);
-                font-style: italic;
+                cursor: pointer;
             }
         }
     }
     /**/
+    #quote{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        span{
+            font-size: 28px;
+            color: rgba(240,240,240,1);
+            font-weight: 600;
+        }
+    }
+    /**/
+    #weather{
+        position: absolute;
+        top:0;
+        right:10%;
+        z-index: 2;
+        span{
+            font-size: 20px;
+            font-weight: 500;
+            color:#fff;
+        }
+    }
     /**/
 }
